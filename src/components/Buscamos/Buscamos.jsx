@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import diseno from '../../img/diseno.avif'
+import maiz from '../../img/maiz.avif'
 
 
 function Buscamos() {
@@ -23,7 +23,7 @@ function Buscamos() {
   };
 
   return (
-    <div style={{backgroundImage:`url(${diseno})`,backgroundSize:'cover'}} >
+    <div style={{backgroundImage:`url(${maiz})`,backgroundSize:'cover'}} >
     <Container style={{marginTop:'100px', }}>
       <Row >
         <Col

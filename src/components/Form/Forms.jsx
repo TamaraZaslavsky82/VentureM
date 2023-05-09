@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import espigas from '../../img/espigas.jpg'
 
 const Forms = () => {
   const [companyName, setCompanyName] = useState("");
@@ -19,21 +20,39 @@ const Forms = () => {
   };
 
   return (
-    <div style={{ marginTop: "100px" }}>
+    <div style={{ marginTop: "100px", width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems:'center',
+    flexDirection:'column',
+    backgroundImage:`url(${espigas})`,
+    backgroundSize:'cover',
+    backgroundRepeat: 'no-repeat',
+    }}>
       <h3
         style={{
           backgroundColor: "rgb(185, 119, 14)",
-          marginBottom: "80px",
+          marginBottom: "40px",
           color: "whitesmoke",
-          width:'300px',
-          borderRadius:'10px',
-          display:'flex',
-          justifyContent:'center'
+          width: "300px",
+          borderRadius: "10px",
+          display: "flex",
+          justifyContent: "center",
+          marginTop: '30px'
         }}
       >
         Investment Form
       </h3>
-      <Form onSubmit={handleSubmit} >
+      <Form
+        onSubmit={handleSubmit}
+        style={{
+          width: "60%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems:'center',
+          flexDirection:'column'
+      }}
+      >
         <Form.Group controlId="companyName">
           <Form.Label>Company Name:</Form.Label>
           <Form.Control
@@ -41,6 +60,7 @@ const Forms = () => {
             value={companyName}
             onChange={(e) => setCompanyName(e.target.value)}
             required
+            style={{ background: "rgb(254, 245, 231 )" }}
           />
         </Form.Group>
 
@@ -51,6 +71,7 @@ const Forms = () => {
             value={country}
             onChange={(e) => setCountry(e.target.value)}
             required
+            style={{ background: "rgb(254, 245, 231 )" }}
           />
         </Form.Group>
 
@@ -62,6 +83,7 @@ const Forms = () => {
             value={companyDescription}
             onChange={(e) => setCompanyDescription(e.target.value)}
             required
+            style={{ background: "rgb(254, 245, 231 )" }}
           />
         </Form.Group>
 
@@ -72,6 +94,7 @@ const Forms = () => {
             value={fundraiseAmount}
             onChange={(e) => setFundraiseAmount(e.target.value)}
             required
+            style={{ background: "rgb(254, 245, 231 )" }}
           />
         </Form.Group>
 
@@ -81,6 +104,7 @@ const Forms = () => {
             type="text"
             value={preMoneyValuation}
             onChange={(e) => setPreMoneyValuation(e.target.value)}
+            style={{ background: "rgb(254, 245, 231 )" }}
           />
         </Form.Group>
 
@@ -90,6 +114,7 @@ const Forms = () => {
             type="text"
             value={revenueHistory}
             onChange={(e) => setRevenueHistory(e.target.value)}
+            style={{ background: "rgb(254, 245, 231 )" }}
           />
         </Form.Group>
 
@@ -100,6 +125,7 @@ const Forms = () => {
             value={industry}
             onChange={(e) => setIndustry(e.target.value)}
             required
+            style={{ background: "rgb(254, 245, 231 )" }}
           />
         </Form.Group>
 
@@ -109,6 +135,7 @@ const Forms = () => {
             type="text"
             value={leadershipTeam}
             onChange={(e) => setLeadershipTeam(e.target.value)}
+            style={{ background: "rgb(254, 245, 231 )" }}
           />
         </Form.Group>
 
@@ -117,6 +144,7 @@ const Forms = () => {
           <Form.Control
             type="file"
             onChange={(e) => setPitchDeck(e.target.files[0])}
+            style={{ background: "rgb(254, 245, 231 )" }}
           />
         </Form.Group>
 
@@ -126,10 +154,21 @@ const Forms = () => {
             type="text"
             value={learnAbout}
             onChange={(e) => setLearnAbout(e.target.value)}
+            style={{ background: "rgb(254, 245, 231 )" }}
           />
         </Form.Group>
         <Form.Group>
-          <Button type="submit">Submit</Button>
+          <Button
+            style={{
+              backgroundColor: "rgb(245, 176, 65)",
+              border: "none",
+              marginTop: "20px",
+              marginBottom: '50px'
+            }}
+            type="submit"
+          >
+            Submit
+          </Button>
         </Form.Group>
       </Form>
     </div>

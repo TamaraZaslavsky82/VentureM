@@ -1,6 +1,6 @@
 import { Grid, Typography, Box } from "@mui/material";
 import { useSpring, animated } from "react-spring";
-import latinoamerrica from "../../img/latinoamerrica.jpg";
+import mapa from "../../img/mapa.png";
 
 function ImageWithText() {
   const slideIn = useSpring({
@@ -20,7 +20,7 @@ function ImageWithText() {
     <Grid container spacing={10}>
       <Grid item xs={8} sm={5}>
         <img
-          src={latinoamerrica}
+          src={mapa}
           alt="Mi imagen"
           style={{ maxWidth: "100%", height: "auto" }}
         />
