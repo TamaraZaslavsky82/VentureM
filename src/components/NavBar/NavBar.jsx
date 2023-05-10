@@ -71,10 +71,10 @@ function Navbar() {
          <div style={{ display: "flex", justifyContent: "center", color:'rgb(214, 137, 16 )' }}>
   {!isMobile ? (
     <>
-      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}>WHAT WE OFFER</h6>
-      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}>INVESTMENT CRITERIAL</h6>
-      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}>INVESTMENT FORM</h6>
-      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}>TEAM</h6>
+      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#animatetext">WHAT WE OFFER</a></h6>
+      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#carrusel1"> INVESTMENT CRITERIAL</a></h6>
+      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#form">INVESTMENT FORM</a></h6>
+      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#team">TEAM</a></h6>
     </>
   ) : null}
 </div>

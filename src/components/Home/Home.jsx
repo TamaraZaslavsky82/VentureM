@@ -18,14 +18,16 @@ import Footer from "../Footer/Footer";
     return (
       <div>
         <NavBar />
-  
+  <div  id='cardmedia'>
         <CardMedia
+       
           component="img"
           height="500"
           image={arabol}
           alt="Mi imagen"
           style={{ objectFit: "cover", marginBottom: "20px" }}
         />
+        </div>
         <div
           style={{
             position: "absolute",
@@ -43,14 +45,24 @@ import Footer from "../Footer/Footer";
             Sustainable Investment Better Outcomes For All .
           </h4>
         </div>
-  
-        <AnimatedText />
-  
-        <Carrusel1 />
+  <div id='animatetext'>
+        <AnimatedText  />
+        </div>
+        <div >
+        <Carrusel1  />
+        </div>
+        <div  >
         <Accordion />
+        </div>
+        <div id='carrusel1' >
         <Buscamos />
+        </div>
+        <div id="form">
         <Forms />
+        </div>
+        <div id="team">
         <Team/>
+        </div>
         <Footer/>
   
        

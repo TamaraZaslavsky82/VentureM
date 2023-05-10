@@ -28,6 +28,7 @@ const Forms = () => {
     backgroundImage:`url(${espigas})`,
     backgroundSize:'cover',
     backgroundRepeat: 'no-repeat',
+    color:'rgb(211, 84, 0)'
     }}>
       <h3
         style={{
@@ -46,14 +47,17 @@ const Forms = () => {
       <Form
         onSubmit={handleSubmit}
         style={{
-          width: "60%",
+          width: "55%",
           display: "flex",
           justifyContent: "center",
           alignItems:'center',
-          flexDirection:'column'
+          flexDirection:'column',
+          backgroundColor:'whitesmoke',
+          borderRadius:'10px',
+          marginTop: '10px'
       }}
       >
-        <Form.Group controlId="companyName">
+        <Form.Group   controlId="companyName">
           <Form.Label>Company Name:</Form.Label>
           <Form.Control
             type="text"
@@ -73,7 +77,7 @@ const Forms = () => {
             required
             style={{ background: "rgb(254, 245, 231 )" }}
           />
-        </Form.Group>
+        </Form.Group >
 
         <Form.Group controlId="companyDescription">
           <Form.Label>Company Description in 200 words or less:</Form.Label>
