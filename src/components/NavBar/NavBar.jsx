@@ -72,10 +72,10 @@ function Navbar() {
          <div style={{ display: "flex", justifyContent: "center", color:'rgb(214, 137, 16 )' }}>
   {!isMobile ? (
     <>
-      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px', textDecoration:'none' }}><a href="#animatetext">WHAT WE OFFER</a></h6>
-      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#carrusel1"> INVESTMENT CRITERIAL</a></h6>
-      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#form">INVESTMENT FORM</a></h6>
-      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#team">TEAM</a></h6>
+      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px',  }}><a href="#animatetext" style={{textDecoration:'none', color:'rgb(220, 118, 51 )'}}>WHAT WE OFFER</a></h6>
+      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#carrusel1" style={{textDecoration:'none', color:'rgb(220, 118, 51 )'}}> INVESTMENT CRITERIAL</a></h6>
+      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#form" style={{textDecoration:'none', color:'rgb(220, 118, 51 )'}}>INVESTMENT FORM</a></h6>
+      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#team"style={{textDecoration:'none', color:'rgb(220, 118, 51 )'}}>TEAM</a></h6>
     </>
   ) : null}
 </div>
@@ -93,10 +93,10 @@ function Navbar() {
 setShowIcon(true);
 }}>x</p>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1rem' }}>
-        <h6 style={{ marginBottom: '1rem' }}><a href="#animatetext">WHAT WE OFFER</a></h6>
-        <h6 style={{ marginBottom: '1rem' }}><a href="#carrusel1"> INVESTMENT CRITERIAL</a></h6>
-        <h6 style={{ marginBottom: '1rem' }}><a href="#form">INVESTMENT FORM</a></h6>
-        <h6 style={{ marginBottom: '1rem' }}><a href="#team">TEAM</a></h6>
+        <h6 style={{ marginBottom: '1rem' }}><a href="#animatetext" style={{textDecoration:'none', color:'rgb(220, 118, 51 )'}}>WHAT WE OFFER</a></h6>
+        <h6 style={{ marginBottom: '1rem' }}><a href="#carrusel1"style={{textDecoration:'none', color:'rgb(220, 118, 51 )'}}> INVESTMENT CRITERIAL</a></h6>
+        <h6 style={{ marginBottom: '1rem' }}><a href="#form"style={{textDecoration:'none', color:'rgb(220, 118, 51 )'}}>INVESTMENT FORM</a></h6>
+        <h6 style={{ marginBottom: '1rem' }}><a href="#team"style={{textDecoration:'none', color:'rgb(220, 118, 51 )'}}>TEAM</a></h6>
         </div>
         </div>
         )}
