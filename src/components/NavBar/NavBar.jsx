@@ -35,6 +35,7 @@ function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const isMobile = useMediaQuery('(max-width:600px)');
+  const [showIcon,setShowIcon] = React.useState(true);
 
 
   React.useEffect(() => {
@@ -71,28 +72,31 @@ function Navbar() {
          <div style={{ display: "flex", justifyContent: "center", color:'rgb(214, 137, 16 )' }}>
   {!isMobile ? (
     <>
-      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#animatetext">WHAT WE OFFER</a></h6>
+      <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px', textDecoration:'none' }}><a href="#animatetext">WHAT WE OFFER</a></h6>
       <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#carrusel1"> INVESTMENT CRITERIAL</a></h6>
       <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#form">INVESTMENT FORM</a></h6>
       <h6 style={{ marginRight: "30px",backgroundColor:'white',padding:'5px',borderRadius:'8px' }}><a href="#team">TEAM</a></h6>
     </>
   ) : null}
 </div>
-
+{showIcon && (
           <IconButton onClick={handleMenuOpen} sx={{ display: { xs: 'block', sm: 'none' } }}>
             
             <MenuIcon />
           </IconButton>
+)}
         </StyledTypography>
       </Toolbar>
       {isMenuOpen && (
         <div style={{ display: 'flex', justifyContent: 'center', backgroundColor: 'white', position: 'absolute', top: '64px', left: 0, right: 0, zIndex: 9999 }}>
-<p onClick={handleMenuClose}>x</p>
+<p onClick={() => { handleMenuClose()
+setShowIcon(true);
+}}>x</p>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1rem' }}>
-        <h6 style={{ marginBottom: '1rem' }}>WHAT WE OFFER</h6>
-        <h6 style={{ marginBottom: '1rem' }}>INVESTMENT CRITERIAL</h6>
-        <h6 style={{ marginBottom: '1rem' }}>INVESTMENT FORM</h6>
-        <h6 style={{ marginBottom: '1rem' }}>TEAM</h6>
+        <h6 style={{ marginBottom: '1rem' }}><a href="#animatetext">WHAT WE OFFER</a></h6>
+        <h6 style={{ marginBottom: '1rem' }}><a href="#carrusel1"> INVESTMENT CRITERIAL</a></h6>
+        <h6 style={{ marginBottom: '1rem' }}><a href="#form">INVESTMENT FORM</a></h6>
+        <h6 style={{ marginBottom: '1rem' }}><a href="#team">TEAM</a></h6>
         </div>
         </div>
         )}
